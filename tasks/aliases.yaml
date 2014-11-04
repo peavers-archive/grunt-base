@@ -1,0 +1,11 @@
+default:
+  - 'clear'
+  - 'watch'
+
+lint:
+  - 'clear'
+  - 'scsslint'
+  - 'jshint'
+
+self-update:
+  - 'shell:update'
