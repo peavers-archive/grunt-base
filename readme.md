@@ -12,12 +12,12 @@ Note: All commands should be ran from your project root directory
 silverstripe/themes/<project>
 ```
 
-## Automatic Install
+### Automatic Install
 There is a simple ```install.sh``` script written for Debian based systems
 * Copy ```install.sh``` contents into a file placed in the projects root directory.
 * Execute with root permissions ```sudo sh install.sh```
 
-## Manual Install
+### Manual Install
 Install as a submodule: 
 
 Note: If this is your first time using a submodule run ```git submodule init``` first, then:
