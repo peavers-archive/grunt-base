@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
         // path to task.js files
         configPath: path.join(process.cwd(), 'grunt-base/tasks'),
-        //overridePath: path.join(process.cwd(), 'grunt-custom/tasks),
+        overridePath: path.join(process.cwd(), 'grunt-custom/tasks'),
 
         // paths for our tasks to use.
         data: {

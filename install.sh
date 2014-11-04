@@ -10,6 +10,8 @@ requiredFiles() {
     # Check if the gem is already installed, skip if it is.
     if [ ! 'gem list scss-lint -i' ]; then
         gem install scss-lint
+    else
+        echo 'INFO: Required gem already installed, skipping';
     fi
 
 }
@@ -52,8 +54,13 @@ setupGrunt() {
     # Install package.json dependencies
     npm install
 
+    clear;
+
+    echo 'COMPLETE: Type "grunt" to start watching!'
+
 }
 
 requiredFiles;
 submodule;
 setupGrunt;
+
