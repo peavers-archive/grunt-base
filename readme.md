@@ -59,7 +59,7 @@ npm install
 
 ## Project Specific Tasks
 1. Create a root level folder named grunt-custom/tasks
-1. Uncomment ```overridePath: path.join(process.cwd(), 'grunt-custom/tasks),``` 
+1. Uncomment ```overridePath: path.join(process.cwd(), 'grunt-custom/tasks),```
 1. Any task file placed in here will be auto-loaded and act as part of the base.
  
 ## Feedback
