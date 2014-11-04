@@ -32,8 +32,8 @@ cat .gitmodules
 
 The output should match:
 ```
-[submodule "grunt-setup"]
-        path = grunt-setup
+[submodule "grunt-base"]
+        path = grunt-base
         url = https://gitlab.cwp.govt.nz/themes/grunt-base.git
 ```
 
