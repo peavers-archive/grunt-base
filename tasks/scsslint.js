@@ -5,11 +5,10 @@ module.exports = {
     options: {
         exclude: "<%= sassDir %>/helpers/_shame.scss",
         config: "<%= gruntConfigDir %>/moe-scss-style.yml",
-        reporterOutput: "<%= gruntConfigDir %>/scss-lint-report.xml",
+        reporterOutput: "<%= gruntConfigDir %>/scss-lint-report.xml", //Useful for CI server, probably not much use outside of that
         colorizeOutput: true,
         compact: true
     },
-
 
     all: [
         "<%= sassDir %>/**/*.scss",
