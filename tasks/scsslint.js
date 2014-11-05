@@ -10,11 +10,10 @@ module.exports = {
         compact: true
     },
 
-    // Specific folders here to encourage standard project structure. Add/remove as required
+
     all: [
-        "<%= sassDir %>/components",
-        "<%= sassDir %>/helpers",
-        "<%= sassDir %>/pagetypes"
+        "<%= sassDir %>/**/*.scss",
+        "!<%= sassDir %>/vendor/*.scss" //Ignore the vendor folder as we don't really care.
     ]
 
 };
