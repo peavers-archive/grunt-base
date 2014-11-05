@@ -6,6 +6,8 @@ module.exports = function (grunt) {
 
         // path to task.js files
         configPath: path.join(process.cwd(), 'grunt-base/tasks'),
+
+        // project specific grunt tasks (your build tasks for example) go here
         overridePath: path.join(process.cwd(), 'grunt-custom/tasks'),
 
         // paths for our tasks to use.
