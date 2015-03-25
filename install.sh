@@ -24,7 +24,7 @@ submodule() {
     # Make sure you're in a git directory before trying to create a submodule
     if [ -d ".git" ]; then
         git submodule init
-        git submodule add https://gitlab.cwp.govt.nz/themes/grunt-base.git
+        git submodule add https://gitlab.cwp.govt.nz/build-tools/grunt-base.git
     else
         echo 'ERROR: Must be ran from a git initalized directory';
         exit;
