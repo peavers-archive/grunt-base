@@ -1,6 +1,5 @@
 default:
   - 'clear'
-  - 'sass'
   - 'watch'
 
 lint:
@@ -9,4 +8,9 @@ lint:
   - 'jshint'
 
 self-update:
+  - 'clear'
   - 'shell:update'
+
+package-update:
+  - 'clear'
+  - 'devUpdate'

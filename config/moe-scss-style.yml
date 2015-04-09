@@ -6,8 +6,12 @@ linters:
 
   BorderZero:
     enabled: true
+    convention: zero # or `none`
 
   ColorKeyword:
+    enabled: true
+
+  ColorVariable:
     enabled: true
 
   Comment:
@@ -39,7 +43,7 @@ linters:
 
   HexLength:
     enabled: true
-    style: long
+    style: long # or 'long'
 
   HexNotation:
     enabled: true
@@ -48,7 +52,10 @@ linters:
   HexValidation:
     enabled: true
 
-  IdWithExtraneousSelector:
+  IdSelector:
+    enabled: true
+
+  ImportantRule:
     enabled: true
 
   ImportPath:
@@ -58,6 +65,7 @@ linters:
 
   Indentation:
     enabled: true
+    allow_non_nested_indentation: false
     character: space # or 'tab'
     width: 2
 
@@ -71,6 +79,7 @@ linters:
 
   NameFormat:
     enabled: true
+    allow_leading_underscore: true
     convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
   NestingDepth:
@@ -80,9 +89,29 @@ linters:
   PlaceholderInExtend:
     enabled: true
 
-  PropertySortOrder:
+  PropertyCount:
     enabled: false
+    include_nested: false
+    max_properties: 10
+
+  PropertyUnits:
+    enabled: true
+    global: [
+      'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
+      'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
+      'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
+      'deg', 'grad', 'rad', 'turn',            # Angle
+      'ms', 's',                               # Duration
+      'Hz', 'kHz',                             # Frequency
+      'dpi', 'dpcm', 'dppx',                   # Resolution
+      '%',                                     # Other
+    ]
+    properties: {}
+
+  PropertySortOrder:
+    enabled: true
     ignore_unspecified: false
+    separate_groups: false
 
   PropertySpelling:
     enabled: true
@@ -90,17 +119,17 @@ linters:
 
   QualifyingElement:
     enabled: true
-    allow_with_attribute: false
-    allow_with_class: false
-    allow_with_id: false
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
 
   SelectorDepth:
-    enabled: false
+    enabled: true
     max_depth: 3
 
   SelectorFormat:
     enabled: true
-    convention: hyphenated_lowercase # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+    convention: hyphenated_lowercase # or 'BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
 
   Shorthand:
     enabled: true
@@ -124,7 +153,7 @@ linters:
 
   SpaceBeforeBrace:
     enabled: true
-    style: space
+    style: space # or 'new_line'
     allow_single_line_padding: false
 
   SpaceBetweenParens:
@@ -153,11 +182,15 @@ linters:
   UrlQuotes:
     enabled: true
 
-  VendorPrefixes:
+  VariableForProperty:
+    enabled: false
+    properties: []
+
+  VendorPrefix:
     enabled: true
     identifier_list: base
-    include: []
-    exclude: []
+    additional_identifiers: []
+    excluded_identifiers: []
 
   ZeroUnit:
     enabled: true

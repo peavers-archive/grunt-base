@@ -3,7 +3,7 @@
 module.exports = {
 
     options: {
-        spawn: false, // Reduces latency by ~500ms but may cause errors. Set true if error prone process
+        spawn: true, // Reduces latency by ~500ms but may cause errors. Set true if error prone process
         interrupt: true,
         debounceDelay: 250
     },
