@@ -8,6 +8,8 @@ module.exports = {
         compact: true
     },
 
+
+
     all: [
         "<%= sassDir %>/**/*.scss",
         "!<%= sassDir %>/vendor/*.scss", //Ignore the vendor folder as we don't really care.
